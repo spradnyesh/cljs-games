@@ -30,7 +30,7 @@
                         :source-paths ["src"]
                         :compiler {:output-to "resources/public/js/compiled/cljs_games.js"
                                    :main cljs-games.core
-                                   :optimizations :advanced
+                                   ;; :optimizations :advanced
                                    :pretty-print false}}]}
 
   :figwheel {:css-dirs ["resources/public/css"] ;; watch and update CSS
