@@ -1,0 +1,30 @@
+.parent {
+    width: 600px;
+}
+.card div {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 10px;
+    border: 1px solid black;
+    background-color: #5bc0de;
+}
+.card div p {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+}
+.card div p span {
+    margin: auto;
+    font-size: large;
+}
+.visible {
+    visibility: visible;
+}
+.hidden {
+    visibility: hidden;
+}
+.matched {
+    background-color: #fcf8e3;
+}
