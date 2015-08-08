@@ -68,7 +68,7 @@
 (defn main []
   (if-not (:started? @app-state)
     (do (start-game) (main))
-    [:div.parent (for [c (:cards @app-state)]
+    [:div#pexeso (for [c (:cards @app-state)]
                    ^{:key (.random js/Math)}[:div.card [card c]])]))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
