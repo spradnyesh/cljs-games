@@ -6,8 +6,10 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <div id="app"></div>
     <div><canvas id="canvas" width="700" height="700"></canvas></div>
     <script src="js/compiled/cljs_games.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      cljs_games.game_of_life.draw_board(cljs_games.game_of_life.init_random_board(50))
+    </script>
   </body>
 </html>
