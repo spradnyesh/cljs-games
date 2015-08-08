@@ -37,8 +37,8 @@
                                            (visible-cards))))]
     (some true? (map #(= % (set/intersection vc-indexes %)) line-indexes))))
 (defn game-draw-or-over? []
-  (cond (game-draw?) :draw
-        (game-over?) :over))
+  (cond (game-over?) :over
+        (game-draw?) :draw))
 
 (defn restart-game? [rslt]
   (let [msg (str (if (= :draw rslt) "Draw!" "Yay, you've won!")
